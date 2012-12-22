@@ -1,0 +1,12 @@
+name: BlockCount
+version: 0.1
+author: Aditya
+
+main: aditya.minecraft.blockcount.BlockCountPlugin
+
+commands:
+   resetblock:
+      description: This command resets the block count.
+      usage: /<command> [place | break | both]
+#      permission: <plugin name>.resetblock
+#      permission-message: You don't have <permission>
