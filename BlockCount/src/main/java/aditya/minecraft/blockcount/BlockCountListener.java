@@ -20,7 +20,8 @@ public class BlockCountListener implements Listener {
 
     @EventHandler
     public void blockBreak(BlockBreakEvent event) {
-        Player player = event.getPlayer();
+        Player player;
+        player = event.getPlayer();
         player.sendMessage(ChatColor.AQUA + "Blocks broken: " + ++blockBreak);
     }
 
