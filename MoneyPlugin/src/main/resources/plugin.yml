@@ -1,0 +1,5 @@
+name: MoneyPlugin
+version: 0.1
+author: Aditya
+
+main: aditya.minecraft.moneyplugin.MoneyPlugin
