@@ -1,0 +1,5 @@
+name: DoubleExpPlugin
+version: 0.1
+author: Aditya
+
+main: aditya.minecraft.doubleexpplugin.DoubleExpPlugin
