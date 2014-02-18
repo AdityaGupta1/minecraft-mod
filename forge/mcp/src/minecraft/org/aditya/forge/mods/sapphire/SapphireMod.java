@@ -22,6 +22,11 @@ public class SapphireMod {
 	public static Block sapphireblock;
 	public static Block sapphireore;
 	public static Block sapphireglass;
+	public static Item sapphireaxe;
+	public static Item sapphireshovel;
+	public static Item sapphirepickaxe;
+	public static Item sapphirehoe;
+	public static Item sapphiresword;
 
 	@Init
 	public void load(FMLInitializationEvent event) {
@@ -48,13 +53,36 @@ public class SapphireMod {
 
 		GameRegistry.registerWorldGenerator(new WorldGeneratorSapphire());
 
-		GameRegistry.addRecipe(new ItemStack(sapphireblock, 1), new Object[] {
-				"TTT", "TTT", "TTT", 'T', sapphire, });
-		GameRegistry.addShapelessRecipe(new ItemStack(sapphire, 9),
-				new Object[] { sapphireblock });
-		GameRegistry.addSmelting(SapphireMod.sapphireore.blockID,
-				new ItemStack(sapphire, 1), 5F);
-		GameRegistry.addSmelting(SapphireMod.sapphireblock.blockID,
-				new ItemStack(sapphireglass, 1), 5F);
+		GameRegistry.addRecipe(new ItemStack(sapphireblock, 1), new Object[] {"TTT", "TTT", "TTT", 'T', sapphire, });
+		GameRegistry.addShapelessRecipe(new ItemStack(sapphire, 9),new Object[] { sapphireblock });
+		GameRegistry.addSmelting(SapphireMod.sapphireore.blockID,new ItemStack(sapphire, 1), 5F);
+		GameRegistry.addSmelting(SapphireMod.sapphireblock.blockID,new ItemStack(sapphireglass, 1), 5F);
+		GameRegistry.addRecipe(new ItemStack(sapphirepickaxe, 1), new Object[] {"TTT", " Y ", " Y ", 'T', sapphire, 'Y', Item.stick });
+		GameRegistry.addRecipe(new ItemStack(sapphiresword, 1), new Object[] {" T ", " T ", " Y ", 'T', sapphire, 'Y', Item.stick });
+		GameRegistry.addRecipe(new ItemStack(sapphireaxe, 1), new Object[] {"TT ", "TY ", " Y ", 'T', sapphire, 'Y', Item.stick });
+		GameRegistry.addRecipe(new ItemStack(sapphirehoe, 1), new Object[] {"TT ", " Y ", " Y ", 'T', sapphire, 'Y', Item.stick });
+		GameRegistry.addRecipe(new ItemStack(sapphireshovel, 1), new Object[] {" T ", " Y ", " Y ", 'T', sapphire, 'Y', Item.stick });
+	}
+
+	public static EnumToolMaterial SapphireTool = EnumHelper.addToolMaterial(
+			"SapphireTool", 3, 1600, 9.0F, 3.0F, 10);
+	{
+
+		sapphireaxe = new SapphireAxe(2004, SapphireTool)
+				.setUnlocalizedName("axeSapphire");
+		sapphireshovel = new SapphireShovel(2005, SapphireTool)
+				.setUnlocalizedName("spadeSapphire");
+		sapphirepickaxe = new SapphirePickaxe(2006, SapphireTool)
+				.setUnlocalizedName("pickaxeSapphire");
+		sapphirehoe = new SapphireHoe(2007, SapphireTool)
+				.setUnlocalizedName("hoeSapphire");
+		sapphiresword = new SapphireSword(2008, SapphireTool)
+				.setUnlocalizedName("swordSapphire");
+
+		LanguageRegistry.addName(sapphireaxe, "Sapphire Axe");
+		LanguageRegistry.addName(sapphireshovel, "Sapphire Shovel");
+		LanguageRegistry.addName(sapphirepickaxe, "Sapphire Pickaxe");
+		LanguageRegistry.addName(sapphiresword, "Sapphire Sword");
+		LanguageRegistry.addName(sapphirehoe, "Sapphire Hoe");
 	}
 }
