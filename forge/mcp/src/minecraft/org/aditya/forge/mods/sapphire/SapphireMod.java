@@ -1,11 +1,13 @@
 package org.aditya.forge.mods.sapphire;
 
 import net.minecraft.block.Block;
+import net.minecraft.item.EnumArmorMaterial;
 import net.minecraft.item.EnumToolMaterial;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemFood;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.EnumHelper;
+import cpw.mods.fml.client.registry.RenderingRegistry;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.Init;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
@@ -27,6 +29,10 @@ public class SapphireMod {
 	public static Item sapphirepickaxe;
 	public static Item sapphirehoe;
 	public static Item sapphiresword;
+	public static Item sapphirechestplate;
+	public static Item sapphireboots;
+	public static Item sapphireleggings;
+	public static Item sapphirehelmet;
 
 	@Init
 	public void load(FMLInitializationEvent event) {
@@ -62,6 +68,10 @@ public class SapphireMod {
 		GameRegistry.addRecipe(new ItemStack(sapphireaxe, 1), new Object[] {"TT ", "TY ", " Y ", 'T', sapphire, 'Y', Item.stick });
 		GameRegistry.addRecipe(new ItemStack(sapphirehoe, 1), new Object[] {"TT ", " Y ", " Y ", 'T', sapphire, 'Y', Item.stick });
 		GameRegistry.addRecipe(new ItemStack(sapphireshovel, 1), new Object[] {" T ", " Y ", " Y ", 'T', sapphire, 'Y', Item.stick });
+		GameRegistry.addRecipe(new ItemStack(sapphirehelmet, 1), new Object[] {"TTT", "T T", 'T', sapphire, });
+		GameRegistry.addRecipe(new ItemStack(sapphirechestplate, 1),new Object[] { "T T", "TTT", "TTT", 'T', sapphire, });
+		GameRegistry.addRecipe(new ItemStack(sapphireleggings, 1),new Object[] { "TTT", "T T", "T T", 'T', sapphire, });
+		GameRegistry.addRecipe(new ItemStack(sapphireboots, 1), new Object[] {"T T", "T T", 'T', sapphire, });
 	}
 
 	public static EnumToolMaterial SapphireTool = EnumHelper.addToolMaterial(
@@ -84,5 +94,25 @@ public class SapphireMod {
 		LanguageRegistry.addName(sapphirepickaxe, "Sapphire Pickaxe");
 		LanguageRegistry.addName(sapphiresword, "Sapphire Sword");
 		LanguageRegistry.addName(sapphirehoe, "Sapphire Hoe");
+	}
+
+	public static EnumArmorMaterial SapphireArmor = EnumHelper
+			.addArmorMaterial("SapphireArmor", 8, new int[] { 3, 8, 6, 3 }, 30);
+	{
+		RenderingRegistry.addNewArmourRendererPrefix("SapphireArmor");
+
+		sapphirehelmet = new SapphireArmor(2009, SapphireArmor, 5, 0)
+				.setUnlocalizedName("helmetSapphire");
+		sapphirechestplate = new SapphireArmor(2010, SapphireArmor, 5, 1)
+				.setUnlocalizedName("chestplateSapphire");
+		sapphireleggings = new SapphireArmor(2011, SapphireArmor, 5, 2)
+				.setUnlocalizedName("leggingsSapphire");
+		sapphireboots = new SapphireArmor(2012, SapphireArmor, 5, 3)
+				.setUnlocalizedName("bootsSapphire");
+
+		LanguageRegistry.addName(sapphirehelmet, "Sapphire Helmet");
+		LanguageRegistry.addName(sapphirechestplate, "Sapphire Chestplate");
+		LanguageRegistry.addName(sapphireboots, "Sapphire Boots");
+		LanguageRegistry.addName(sapphireleggings, "Sapphire Leggings");
 	}
 }
