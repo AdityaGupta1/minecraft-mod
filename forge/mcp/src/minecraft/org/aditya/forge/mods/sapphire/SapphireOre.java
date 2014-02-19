@@ -9,6 +9,10 @@ import net.minecraft.creativetab.CreativeTabs;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
+/**
+ * @author Aditya Gupta
+ */
+
 public class SapphireOre extends Block{
 	public SapphireOre(int par1, String texture) {
 		super(par1, Material.rock);

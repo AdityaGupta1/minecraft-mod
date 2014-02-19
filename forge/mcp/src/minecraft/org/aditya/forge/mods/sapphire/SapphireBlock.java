@@ -15,6 +15,10 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.crafting.CraftingManager;
 
+/**
+ * @author Aditya Gupta
+ */
+
 public class SapphireBlock extends Block {
 	public SapphireBlock(int par1, String texture) {
 		super(par1, Material.iron);

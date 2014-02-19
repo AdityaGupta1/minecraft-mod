@@ -6,6 +6,10 @@ import net.minecraft.item.EnumToolMaterial;
 import net.minecraft.item.ItemAxe;
 import net.minecraft.item.ItemSword;
 
+/**
+ * @author Aditya Gupta
+ */
+
 public class SapphireAxe extends ItemAxe {
 	public SapphireAxe(int ItemID, EnumToolMaterial material) {
 		super(ItemID, material);

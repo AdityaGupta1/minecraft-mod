@@ -8,6 +8,10 @@ import net.minecraft.item.ItemPickaxe;
 import net.minecraft.item.ItemSpade;
 import net.minecraft.item.ItemSword;
 
+/**
+ * @author Aditya Gupta
+ */
+
 public class SapphirePickaxe extends ItemPickaxe {
 	public SapphirePickaxe(int ItemID, EnumToolMaterial material) {
 		super(ItemID, material);

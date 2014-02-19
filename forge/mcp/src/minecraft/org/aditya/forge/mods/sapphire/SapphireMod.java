@@ -15,7 +15,11 @@ import cpw.mods.fml.common.network.NetworkMod;
 import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.common.registry.LanguageRegistry;
 
-@Mod(modid = "SapphireMod", name = "SapphireMod", version = "v1")
+/**
+ * @author Aditya Gupta
+ */
+
+@Mod(modid = "SapphireMod", name = "Sapphire Mod", version = "1.0")
 @NetworkMod(clientSideRequired = true, serverSideRequired = false)
 public class SapphireMod {
 

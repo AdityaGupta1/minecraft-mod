@@ -7,6 +7,10 @@ import net.minecraft.item.ItemAxe;
 import net.minecraft.item.ItemSpade;
 import net.minecraft.item.ItemSword;
 
+/**
+ * @author Aditya Gupta
+ */
+
 public class SapphireShovel extends ItemSpade {
 	public SapphireShovel(int ItemID, EnumToolMaterial material) {
 		super(ItemID, material);

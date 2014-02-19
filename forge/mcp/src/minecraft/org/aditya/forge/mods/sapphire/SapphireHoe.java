@@ -8,6 +8,10 @@ import net.minecraft.item.ItemHoe;
 import net.minecraft.item.ItemSpade;
 import net.minecraft.item.ItemSword;
 
+/**
+ * @author Aditya Gupta
+ */
+
 public class SapphireHoe extends ItemHoe {
 	public SapphireHoe(int ItemID, EnumToolMaterial material) {
 		super(ItemID, material);

@@ -7,6 +7,10 @@ import net.minecraft.world.gen.feature.WorldGenMinable;
 import cpw.mods.fml.common.IWorldGenerator;
 import cpw.mods.fml.common.IWorldGenerator;
 
+/**
+ * @author Aditya Gupta
+ */
+
 public class WorldGeneratorSapphire implements IWorldGenerator {
 	@Override
 	public void generate(Random random, int chunkX, int chunkZ, World world,

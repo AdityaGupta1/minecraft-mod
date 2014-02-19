@@ -6,6 +6,10 @@ import cpw.mods.fml.relauncher.*;
 import net.minecraft.client.renderer.texture.IconRegister;
 import net.minecraft.creativetab.CreativeTabs;
 
+/**
+ * @author Aditya Gupta
+ */
+
 public class Sapphire extends Item {
 
 	public Sapphire(int par1) {
