@@ -20,12 +20,30 @@ The Sapphire Mod adds:
     * Sapphire Pickaxe
     * Sapphire Hoe
     * Sapphire Shovel
+* Sapphire Armor
+* A new creative tab to contain all of these items
+* Crafting and smelting recipes for these items
+
+###Industrial Mod
+
+The Industrial Mod adds:
+
+* Copper, Tin, and Bronze ingots and blocks
+* Copper and Tin Ores
+* Energetic Shards (the main ingredient in the crafting of circuits)
+* Energetic Ore to drop Energetic Shards
+* 3 types of circuits: Electric, Advanced, and Epic
+* Lava Generators
+* Rocket Launchers
+* Strange Liquid
+* Bronze Armor
+* Copper and Gold Wires
 * A new creative tab to contain all of these items
 * Crafting and smelting recipes for these items
 
 To install this mod:
 
-1. Obtain the modkit from [here](http://www.devoxx4kids.org/usa/workshops/minecraft-modding/). Overlay the "forge" directory from this repository to the modkit. The modkit already has a forge directory. When you copy the forge folder into your modkit, it will merge the two forge folders together.
+1. Obtain the modkit from [here](http://www.devoxx4kids.org/usa/workshops/minecraft-modding/). Overlay the "forge" directory from one of the folders with a mod name in it (sapphire-forge, industrial-forge, etc.) to the modkit. The modkit already has a forge directory. When you copy the forge folder into your modkit, it will merge the two forge folders together.
 
 2. If your computer asks you if you want to replace CreativeTabs.java with a different CreativeTabs.java, say yes, because this will add the new creative tab for the sapphires.
 
