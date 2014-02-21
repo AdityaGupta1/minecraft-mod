@@ -41,7 +41,7 @@ The Industrial Mod adds:
 * A new creative tab to contain all of these items
 * Crafting and smelting recipes for these items
 
-To install this mod:
+### To install these mods:
 
 1. Obtain the modkit from [here](http://www.devoxx4kids.org/usa/workshops/minecraft-modding/). Overlay the "forge" directory from one of the folders with a mod name in it (sapphire-forge, industrial-forge, etc.) to the modkit. The modkit already has a forge directory. When you copy the forge folder into your modkit, it will merge the two forge folders together.
 
