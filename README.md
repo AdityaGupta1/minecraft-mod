@@ -38,6 +38,7 @@ The Industrial Mod adds:
 * Strange Liquid
 * Bronze Armor
 * Copper and Gold Wires
+* Sticky Material, which is just like vines but doesnt grow and can be crafted (the texture is slightly lighter)
 * A new creative tab to contain all of these items
 * Crafting and smelting recipes for these items
 
