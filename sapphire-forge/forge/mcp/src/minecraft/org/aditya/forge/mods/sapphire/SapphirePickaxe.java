@@ -15,7 +15,7 @@ import net.minecraft.item.ItemSword;
 public class SapphirePickaxe extends ItemPickaxe {
 	public SapphirePickaxe(int ItemID, EnumToolMaterial material) {
 		super(ItemID, material);
-		this.setCreativeTab(CreativeTabs.tabSapphires);
+		this.setCreativeTab(CreativeTabs.tabTools);
 	}
 
 	public void registerIcons(IconRegister reg) { 

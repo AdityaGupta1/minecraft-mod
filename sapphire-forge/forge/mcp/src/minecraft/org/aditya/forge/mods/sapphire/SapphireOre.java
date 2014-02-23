@@ -16,7 +16,7 @@ import cpw.mods.fml.relauncher.SideOnly;
 public class SapphireOre extends Block{
 	public SapphireOre(int par1, String texture) {
 		super(par1, Material.rock);
-		setCreativeTab(CreativeTabs.tabSapphires);
+		setCreativeTab(CreativeTabs.tabBlock);
 	}
 
 	public int idDropped(int par1, Random par2Random, int par3) {

@@ -14,7 +14,7 @@ import net.minecraft.item.ItemSword;
 public class SapphireShovel extends ItemSpade {
 	public SapphireShovel(int ItemID, EnumToolMaterial material) {
 		super(ItemID, material);
-		this.setCreativeTab(CreativeTabs.tabSapphires);
+		this.setCreativeTab(CreativeTabs.tabTools);
 	}
 
 	public void registerIcons(IconRegister reg) { 

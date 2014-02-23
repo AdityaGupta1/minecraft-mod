@@ -22,7 +22,7 @@ import net.minecraft.item.crafting.CraftingManager;
 public class SapphireBlock extends Block {
 	public SapphireBlock(int par1, String texture) {
 		super(par1, Material.iron);
-		setCreativeTab(CreativeTabs.tabSapphires);
+		setCreativeTab(CreativeTabs.tabBlock);
 	}
 
 	public int idDropped(int par1, Random par2Random, int par3) {

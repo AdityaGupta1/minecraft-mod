@@ -13,7 +13,7 @@ import net.minecraft.item.ItemSword;
 public class SapphireAxe extends ItemAxe {
 	public SapphireAxe(int ItemID, EnumToolMaterial material) {
 		super(ItemID, material);
-		this.setCreativeTab(CreativeTabs.tabSapphires);
+		this.setCreativeTab(CreativeTabs.tabTools);
 	}
 
 	public void registerIcons(IconRegister reg) { 

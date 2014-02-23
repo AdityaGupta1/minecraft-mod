@@ -14,7 +14,7 @@ public class Sapphire extends Item {
 
 	public Sapphire(int par1) {
 		super(par1);
-		setCreativeTab(CreativeTabs.tabSapphires);
+		setCreativeTab(CreativeTabs.tabMaterials);
 	}
 
 	public void registerIcons(IconRegister reg) {

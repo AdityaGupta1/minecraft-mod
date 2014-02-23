@@ -18,7 +18,7 @@ public class SapphireGlass extends Block {
 
 	public SapphireGlass(int par1, String texture) {
 		super(par1, Material.glass);
-		setCreativeTab(CreativeTabs.tabSapphires); // place in creative tabs
+		setCreativeTab(CreativeTabs.tabBlock);
 	}
 
 	public boolean isOpaqueCube() {
