@@ -18,7 +18,7 @@ public class ChemicalVial extends Item {
 
 	public ChemicalVial(int par1) {
 		super(par1);
-		setCreativeTab(CreativeTabs.tabIndustrial);
+		setCreativeTab(CreativeTabs.tabMaterials);
 	}
 
 	public void registerIcons(IconRegister reg) {

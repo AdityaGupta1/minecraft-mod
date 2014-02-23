@@ -14,7 +14,7 @@ import cpw.mods.fml.relauncher.SideOnly;
 public class TinBlock extends Block{
 	public TinBlock(int par1, String texture) {
 		super(par1, Material.rock);
-		setCreativeTab(CreativeTabs.tabIndustrial);
+		setCreativeTab(CreativeTabs.tabBlock);
 	}
 
 	public int idDropped(int par1, Random par2Random, int par3) {

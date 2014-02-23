@@ -14,7 +14,7 @@ public class CopperWire extends Item {
 
 	public CopperWire(int par1) {
 		super(par1);
-		setCreativeTab(CreativeTabs.tabIndustrial);
+		setCreativeTab(CreativeTabs.tabRedstone);
 	}
 
 	public void registerIcons(IconRegister reg) {

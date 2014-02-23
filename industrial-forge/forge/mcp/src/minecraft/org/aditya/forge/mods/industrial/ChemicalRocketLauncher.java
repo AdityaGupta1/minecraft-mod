@@ -18,7 +18,7 @@ public class ChemicalRocketLauncher extends Item {
 
 	public ChemicalRocketLauncher(int par1) {
 		super(par1);
-		setCreativeTab(CreativeTabs.tabIndustrial);
+		setCreativeTab(CreativeTabs.tabTools);
 		setMaxStackSize(1);
 	}
 
@@ -29,16 +29,16 @@ public class ChemicalRocketLauncher extends Item {
 	}
 	
 	/**
-    * Called whenever this item is equipped and the right mouse button is pressed. Args: itemStack, world, entityPlayer
-    */
+     * Called whenever this item is equipped and the right mouse button is pressed. Args: itemStack, world, entityPlayer
+     */
     public ItemStack onItemRightClick(ItemStack par1ItemStack, World par2World, EntityPlayer par3EntityPlayer)
     {
         if (!par2World.isRemote)
         {
-        	EntitySnowball entitysnowball = new EntitySnowball(par2World);
-            par2World.spawnEntityInWorld(new EntitySnowball(par2World, par3EntityPlayer));
-            entitysnowball.type = 2;
+            par2World.spawnEntityInWorld(new EntityRocket(par2World, par3EntityPlayer));
+            EntityRocket.type = 2;
         }
+
         return par1ItemStack;
     }
 }

@@ -17,7 +17,7 @@ import cpw.mods.fml.relauncher.SideOnly;
 public class LavaGenerator extends Block{
 	public LavaGenerator(int par1, String texture) {
 		super(par1, Material.iron);
-		setCreativeTab(CreativeTabs.tabIndustrial);
+		setCreativeTab(CreativeTabs.tabRedstone);
 	}
 
 	public int idDropped(int par1, Random par2Random, int par3) {

@@ -14,7 +14,7 @@ public class ElectricCircuit extends Item {
 
 	public ElectricCircuit(int par1) {
 		super(par1);
-		setCreativeTab(CreativeTabs.tabIndustrial);
+		setCreativeTab(CreativeTabs.tabRedstone);
 	}
 
 	public void registerIcons(IconRegister reg) {

@@ -14,7 +14,7 @@ public class EnergeticShard extends Item {
 
 	public EnergeticShard(int par1) {
 		super(par1);
-		setCreativeTab(CreativeTabs.tabIndustrial);
+		setCreativeTab(CreativeTabs.tabMaterials);
 	}
 
 	public void registerIcons(IconRegister reg) {

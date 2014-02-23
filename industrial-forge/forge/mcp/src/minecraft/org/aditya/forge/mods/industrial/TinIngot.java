@@ -14,7 +14,7 @@ public class TinIngot extends Item {
 
 	public TinIngot(int par1) {
 		super(par1);
-		setCreativeTab(CreativeTabs.tabIndustrial);
+		setCreativeTab(CreativeTabs.tabMaterials);
 	}
 
 	public void registerIcons(IconRegister reg) {

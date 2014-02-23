@@ -14,7 +14,7 @@ public class GoldWire extends Item {
 
 	public GoldWire(int par1) {
 		super(par1);
-		setCreativeTab(CreativeTabs.tabIndustrial);
+		setCreativeTab(CreativeTabs.tabRedstone);
 	}
 
 	public void registerIcons(IconRegister reg) {

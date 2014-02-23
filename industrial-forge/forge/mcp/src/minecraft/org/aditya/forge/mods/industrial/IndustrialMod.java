@@ -46,10 +46,10 @@ public class IndustrialMod {
 	public static Item bronzechestplate;
 	public static Item bronzeleggings;
 	public static Item bronzeboots;
-	public static Item rocketlauncher;
-	public static Item chemicalrocketlauncher;
 	public static Item chemicalvial;
 	public static Block stickymaterial;
+	public static Item rocketlauncher;
+	public static Item chemicalrocketlauncher;
 	
 	@Init
 	public void load(FMLInitializationEvent event) {
@@ -120,12 +120,6 @@ public class IndustrialMod {
 		epiccircuit = new EpicCircuit(3118).setUnlocalizedName("circuitEpic");
 		LanguageRegistry.addName(epiccircuit, "Epic Circuit");
 		
-		rocketlauncher = new RocketLauncher(3123).setUnlocalizedName("rocketLauncher");
-		LanguageRegistry.addName(rocketlauncher, "Rocket Launcher");
-		
-		chemicalrocketlauncher = new ChemicalRocketLauncher(3124).setUnlocalizedName("chemicalRocketLauncher");
-		LanguageRegistry.addName(chemicalrocketlauncher, "Corrosive Rocket Launcher");
-		
 		chemicalvial = new ChemicalVial(3125).setUnlocalizedName("chemicalVial");
 		LanguageRegistry.addName(chemicalvial, "Strange Liquid");
 		
@@ -134,6 +128,12 @@ public class IndustrialMod {
 		.setStepSound(Block.soundGrassFootstep).setResistance(0.2F);
 		GameRegistry.registerBlock(stickymaterial, "stickymaterial");
 		LanguageRegistry.addName(stickymaterial, "Sticky Material");
+		
+		rocketlauncher = new RocketLauncher(3127).setUnlocalizedName("rocketLauncher");
+		LanguageRegistry.addName(rocketlauncher, "Rocket Launcher");
+		
+		chemicalrocketlauncher = new ChemicalRocketLauncher(3128).setUnlocalizedName("chemicalRocketLauncher");
+		LanguageRegistry.addName(chemicalrocketlauncher, "Corrosive Rocket Launcher");
 		
 		GameRegistry.registerWorldGenerator(new WorldGeneratorCopper());
 		GameRegistry.registerWorldGenerator(new WorldGeneratorEnergetic());
@@ -165,9 +165,7 @@ public class IndustrialMod {
 		GameRegistry.addRecipe(new ItemStack(bronzechestplate, 1),new Object[] { "T T", "TTT", "TTT", 'T', bronzeplate});
 		GameRegistry.addRecipe(new ItemStack(bronzeleggings, 1),new Object[] { "TTT", "T T", "T T", 'T', bronzeplate});
 		GameRegistry.addRecipe(new ItemStack(bronzeboots, 1), new Object[] {"T T", "T T", 'T', bronzeplate});
-		GameRegistry.addRecipe(new ItemStack(rocketlauncher, 1), new Object[] {"OOO", "TAC", "OOO", 'O', Block.obsidian, 'T', Block.tnt, 'A', advancedcircuit, 'C', electriccircuit});
 		GameRegistry.addShapelessRecipe(new ItemStack(chemicalvial, 1), new Object[] {IndustrialMod.energeticshard, Item.potion});
-		GameRegistry.addShapelessRecipe(new ItemStack(chemicalrocketlauncher, 1), new Object[] {IndustrialMod.chemicalvial, IndustrialMod.rocketlauncher, IndustrialMod.epiccircuit});
 		GameRegistry.addShapelessRecipe(new ItemStack(stickymaterial, 32), new Object[] {IndustrialMod.chemicalvial, Block.vine, IndustrialMod.epiccircuit});
 		GameRegistry.addShapelessRecipe(new ItemStack(stickymaterial, 16), new Object[] {IndustrialMod.chemicalvial, Block.vine, IndustrialMod.advancedcircuit});
 		GameRegistry.addShapelessRecipe(new ItemStack(stickymaterial, 4), new Object[] {IndustrialMod.chemicalvial, Block.vine, IndustrialMod.electriccircuit});

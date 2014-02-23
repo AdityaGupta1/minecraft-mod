@@ -14,7 +14,7 @@ public class AdvancedCircuit extends Item {
 
 	public AdvancedCircuit(int par1) {
 		super(par1);
-		setCreativeTab(CreativeTabs.tabIndustrial);
+		setCreativeTab(CreativeTabs.tabRedstone);
 	}
 
 	public void registerIcons(IconRegister reg) {
