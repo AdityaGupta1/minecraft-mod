@@ -40,22 +40,22 @@ public class SapphireMod {
 
 	@Init
 	public void load(FMLInitializationEvent event) {
-		sapphire = new Sapphire(2000).setUnlocalizedName("sapphire");
+		sapphire = new Sapphire(3000).setUnlocalizedName("sapphire");
 		LanguageRegistry.addName(sapphire, "Sapphire");
 
-		sapphireblock = new SapphireBlock(2001, "sapphireblock")
+		sapphireblock = new SapphireBlock(3001, "sapphireblock")
 				.setUnlocalizedName("blockSapphire").setHardness(5.0F)
 				.setStepSound(Block.soundMetalFootstep).setResistance(10.0F);
 		GameRegistry.registerBlock(sapphireblock, "sapphireblock");
 		LanguageRegistry.addName(sapphireblock, "Sapphire Block");
 
-		sapphireore = new SapphireOre(2002, "sapphireore")
+		sapphireore = new SapphireOre(3002, "sapphireore")
 				.setUnlocalizedName("oreSapphire").setHardness(5.0F)
-				.setStepSound(Block.soundMetalFootstep).setResistance(10.0F);
+				.setStepSound(Block.soundStoneFootstep).setResistance(10.0F);
 		GameRegistry.registerBlock(sapphireore, "sapphireore");
 		LanguageRegistry.addName(sapphireore, "Sapphire Ore");
 
-		sapphireglass = new SapphireGlass(2003, "sapphireglass")
+		sapphireglass = new SapphireGlass(3003, "sapphireglass")
 				.setUnlocalizedName("glassSapphire").setHardness(0.3F)
 				.setStepSound(Block.soundGlassFootstep).setResistance(1.0F);
 		GameRegistry.registerBlock(sapphireglass, "SapphireGlass");
@@ -65,32 +65,32 @@ public class SapphireMod {
 
 		GameRegistry.addRecipe(new ItemStack(sapphireblock, 1), new Object[] {"TTT", "TTT", "TTT", 'T', sapphire, });
 		GameRegistry.addShapelessRecipe(new ItemStack(sapphire, 9),new Object[] { sapphireblock });
-		GameRegistry.addSmelting(SapphireMod.sapphireore.blockID,new ItemStack(sapphire, 1), 5F);
+		GameRegistry.addSmelting(SapphireMod.sapphireore.blockID,new ItemStack(sapphire, 1), 1.0F);
 		GameRegistry.addSmelting(SapphireMod.sapphireblock.blockID,new ItemStack(sapphireglass, 1), 5F);
 		GameRegistry.addRecipe(new ItemStack(sapphirepickaxe, 1), new Object[] {"TTT", " Y ", " Y ", 'T', sapphire, 'Y', Item.stick });
 		GameRegistry.addRecipe(new ItemStack(sapphiresword, 1), new Object[] {" T ", " T ", " Y ", 'T', sapphire, 'Y', Item.stick });
 		GameRegistry.addRecipe(new ItemStack(sapphireaxe, 1), new Object[] {"TT ", "TY ", " Y ", 'T', sapphire, 'Y', Item.stick });
 		GameRegistry.addRecipe(new ItemStack(sapphirehoe, 1), new Object[] {"TT ", " Y ", " Y ", 'T', sapphire, 'Y', Item.stick });
 		GameRegistry.addRecipe(new ItemStack(sapphireshovel, 1), new Object[] {" T ", " Y ", " Y ", 'T', sapphire, 'Y', Item.stick });
-		GameRegistry.addRecipe(new ItemStack(sapphirehelmet, 1), new Object[] {"TTT", "T T", 'T', sapphire, });
-		GameRegistry.addRecipe(new ItemStack(sapphirechestplate, 1),new Object[] { "T T", "TTT", "TTT", 'T', sapphire, });
-		GameRegistry.addRecipe(new ItemStack(sapphireleggings, 1),new Object[] { "TTT", "T T", "T T", 'T', sapphire, });
-		GameRegistry.addRecipe(new ItemStack(sapphireboots, 1), new Object[] {"T T", "T T", 'T', sapphire, });
+		GameRegistry.addRecipe(new ItemStack(sapphirehelmet, 1), new Object[] {"TTT", "T T", 'T', sapphire});
+		GameRegistry.addRecipe(new ItemStack(sapphirechestplate, 1),new Object[] { "T T", "TTT", "TTT", 'T', sapphire});
+		GameRegistry.addRecipe(new ItemStack(sapphireleggings, 1),new Object[] { "TTT", "T T", "T T", 'T', sapphire});
+		GameRegistry.addRecipe(new ItemStack(sapphireboots, 1), new Object[] {"T T", "T T", 'T', sapphire});
 	}
 
 	public static EnumToolMaterial SapphireTool = EnumHelper.addToolMaterial(
 			"SapphireTool", 3, 1600, 9.0F, 3.0F, 10);
 	{
 
-		sapphireaxe = new SapphireAxe(2004, SapphireTool)
+		sapphireaxe = new SapphireAxe(3004, SapphireTool)
 				.setUnlocalizedName("axeSapphire");
-		sapphireshovel = new SapphireShovel(2005, SapphireTool)
+		sapphireshovel = new SapphireShovel(3005, SapphireTool)
 				.setUnlocalizedName("spadeSapphire");
-		sapphirepickaxe = new SapphirePickaxe(2006, SapphireTool)
+		sapphirepickaxe = new SapphirePickaxe(3006, SapphireTool)
 				.setUnlocalizedName("pickaxeSapphire");
-		sapphirehoe = new SapphireHoe(2007, SapphireTool)
+		sapphirehoe = new SapphireHoe(3007, SapphireTool)
 				.setUnlocalizedName("hoeSapphire");
-		sapphiresword = new SapphireSword(2008, SapphireTool)
+		sapphiresword = new SapphireSword(3008, SapphireTool)
 				.setUnlocalizedName("swordSapphire");
 
 		LanguageRegistry.addName(sapphireaxe, "Sapphire Axe");
@@ -105,13 +105,13 @@ public class SapphireMod {
 	{
 		RenderingRegistry.addNewArmourRendererPrefix("SapphireArmor");
 
-		sapphirehelmet = new SapphireArmor(2009, SapphireArmor, 5, 0)
+		sapphirehelmet = new SapphireArmor(3009, SapphireArmor, 5, 0)
 				.setUnlocalizedName("helmetSapphire");
-		sapphirechestplate = new SapphireArmor(2010, SapphireArmor, 5, 1)
+		sapphirechestplate = new SapphireArmor(3010, SapphireArmor, 5, 1)
 				.setUnlocalizedName("chestplateSapphire");
-		sapphireleggings = new SapphireArmor(2011, SapphireArmor, 5, 2)
+		sapphireleggings = new SapphireArmor(3011, SapphireArmor, 5, 2)
 				.setUnlocalizedName("leggingsSapphire");
-		sapphireboots = new SapphireArmor(2012, SapphireArmor, 5, 3)
+		sapphireboots = new SapphireArmor(3012, SapphireArmor, 5, 3)
 				.setUnlocalizedName("bootsSapphire");
 
 		LanguageRegistry.addName(sapphirehelmet, "Sapphire Helmet");

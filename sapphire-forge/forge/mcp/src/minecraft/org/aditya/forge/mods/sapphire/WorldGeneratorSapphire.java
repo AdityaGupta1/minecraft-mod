@@ -26,8 +26,8 @@ public class WorldGeneratorSapphire implements IWorldGenerator {
 		for (int i = 0; i < 10; i++) {
 			int Xcoord = BlockX + random.nextInt(16);
 			int Zcoord = BlockZ + random.nextInt(16);
-			int Ycoord = random.nextInt(24);
-			(new WorldGenMinable(SapphireMod.sapphireore.blockID, 8)).generate(
+			int Ycoord = random.nextInt(16);
+			(new WorldGenMinable(SapphireMod.sapphireore.blockID, 4)).generate(
 					world, random, Xcoord, Ycoord, Zcoord);
 		}
 	}
