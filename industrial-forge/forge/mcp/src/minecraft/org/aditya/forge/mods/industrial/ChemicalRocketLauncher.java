@@ -19,6 +19,7 @@ public class ChemicalRocketLauncher extends Item {
 	public ChemicalRocketLauncher(int par1) {
 		super(par1);
 		setCreativeTab(CreativeTabs.tabIndustrial);
+		setMaxStackSize(1);
 	}
 
 	public void registerIcons(IconRegister reg) {
@@ -38,7 +39,6 @@ public class ChemicalRocketLauncher extends Item {
             par2World.spawnEntityInWorld(new EntitySnowball(par2World, par3EntityPlayer));
             entitysnowball.type = 2;
         }
-
         return par1ItemStack;
     }
 }

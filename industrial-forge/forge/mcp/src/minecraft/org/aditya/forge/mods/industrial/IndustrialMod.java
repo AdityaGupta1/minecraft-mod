@@ -49,6 +49,7 @@ public class IndustrialMod {
 	public static Item rocketlauncher;
 	public static Item chemicalrocketlauncher;
 	public static Item chemicalvial;
+	public static Block stickymaterial;
 	
 	@Init
 	public void load(FMLInitializationEvent event) {
@@ -128,6 +129,12 @@ public class IndustrialMod {
 		chemicalvial = new ChemicalVial(3125).setUnlocalizedName("chemicalVial");
 		LanguageRegistry.addName(chemicalvial, "Strange Liquid");
 		
+		stickymaterial = new StickyMaterial(3126, "stickymaterial")
+		.setUnlocalizedName("stickyMaterial").setHardness(0.2F)
+		.setStepSound(Block.soundGrassFootstep).setResistance(0.2F);
+		GameRegistry.registerBlock(stickymaterial, "stickymaterial");
+		LanguageRegistry.addName(stickymaterial, "Sticky Material");
+		
 		GameRegistry.registerWorldGenerator(new WorldGeneratorCopper());
 		GameRegistry.registerWorldGenerator(new WorldGeneratorEnergetic());
 		GameRegistry.registerWorldGenerator(new WorldGeneratorTin());
@@ -161,6 +168,9 @@ public class IndustrialMod {
 		GameRegistry.addRecipe(new ItemStack(rocketlauncher, 1), new Object[] {"OOO", "TAC", "OOO", 'O', Block.obsidian, 'T', Block.tnt, 'A', advancedcircuit, 'C', electriccircuit});
 		GameRegistry.addShapelessRecipe(new ItemStack(chemicalvial, 1), new Object[] {IndustrialMod.energeticshard, Item.potion});
 		GameRegistry.addShapelessRecipe(new ItemStack(chemicalrocketlauncher, 1), new Object[] {IndustrialMod.chemicalvial, IndustrialMod.rocketlauncher, IndustrialMod.epiccircuit});
+		GameRegistry.addShapelessRecipe(new ItemStack(stickymaterial, 32), new Object[] {IndustrialMod.chemicalvial, Block.vine, IndustrialMod.epiccircuit});
+		GameRegistry.addShapelessRecipe(new ItemStack(stickymaterial, 16), new Object[] {IndustrialMod.chemicalvial, Block.vine, IndustrialMod.advancedcircuit});
+		GameRegistry.addShapelessRecipe(new ItemStack(stickymaterial, 4), new Object[] {IndustrialMod.chemicalvial, Block.vine, IndustrialMod.electriccircuit});
 	}
 	
 	public static EnumArmorMaterial BronzeArmor = EnumHelper

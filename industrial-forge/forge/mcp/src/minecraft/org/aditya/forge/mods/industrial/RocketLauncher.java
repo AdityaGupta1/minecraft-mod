@@ -19,6 +19,7 @@ public class RocketLauncher extends Item {
 	public RocketLauncher(int par1) {
 		super(par1);
 		setCreativeTab(CreativeTabs.tabIndustrial);
+		setMaxStackSize(1);
 	}
 
 	public void registerIcons(IconRegister reg) {
