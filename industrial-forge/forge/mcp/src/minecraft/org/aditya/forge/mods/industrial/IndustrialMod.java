@@ -169,6 +169,8 @@ public class IndustrialMod {
 		GameRegistry.addShapelessRecipe(new ItemStack(stickymaterial, 32), new Object[] {IndustrialMod.chemicalvial, Block.vine, IndustrialMod.epiccircuit});
 		GameRegistry.addShapelessRecipe(new ItemStack(stickymaterial, 16), new Object[] {IndustrialMod.chemicalvial, Block.vine, IndustrialMod.advancedcircuit});
 		GameRegistry.addShapelessRecipe(new ItemStack(stickymaterial, 4), new Object[] {IndustrialMod.chemicalvial, Block.vine, IndustrialMod.electriccircuit});
+		GameRegistry.addRecipe(new ItemStack(rocketlauncher, 1),new Object[] { "OOO", "TAC", "OOO", 'T', Block.tnt, 'O', Block.obsidian, 'A', advancedcircuit, 'C', electriccircuit});
+		GameRegistry.addShapelessRecipe(new ItemStack(chemicalrocketlauncher), new Object[] {IndustrialMod.chemicalvial, IndustrialMod.rocketlauncher, IndustrialMod.epiccircuit});
 	}
 	
 	public static EnumArmorMaterial BronzeArmor = EnumHelper
