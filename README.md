@@ -6,7 +6,7 @@ For Bukkit mods, go to https://github.com/arun-gupta/bukkit-workshop.
 Forge
 -----
 
-###Sapphire Mod
+### Sapphire Mod
 
 The Sapphire Mod adds:
 
@@ -23,7 +23,7 @@ The Sapphire Mod adds:
 * Sapphire Armor
 * Crafting and smelting recipes for these items
 
-###Industrial Mod
+### Industrial Mod
 
 The Industrial Mod adds:
 
@@ -42,7 +42,7 @@ The Industrial Mod adds:
 
 ### To install these mods:
 
-####If you don't have a premium Minecraft account:
+#### If you don't have a premium Minecraft account:
 
 1. Obtain the modkit from [here](http://www.devoxx4kids.org/usa/workshops/minecraft-modding/). Overlay the "forge" directory from one of the folders with a mod name in it (sapphire-forge, industrial-forge, etc.) to the modkit. The modkit already has a forge directory. When you copy the forge folder into your modkit, it will merge the two forge folders together.
 
@@ -50,7 +50,7 @@ The Industrial Mod adds:
 
 3. When you launch Minecraft from the Eclipse in the modkit, it should have the items and blocks that are stated above in a new tab.
 
-####If you do have a premium Minecraft account:
+#### If you do have a premium Minecraft account:
 
 If you already have forge installed on your Minecraft, skip steps 1 to 4.
 
